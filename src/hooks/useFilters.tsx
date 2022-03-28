@@ -31,7 +31,9 @@ const useFilters = () => {
       countriesFiltered = countries.filter((country: CountryFragment) => country.name.toLowerCase().startsWith(search.toLowerCase()));
     }
     if (selectCurrency.length > 0) {
-      countriesFiltered = countriesFiltered.filter((country: CountryFragment) => selectCurrency.includes(country.currency ?? ''));
+      countriesFiltered = countriesFiltered.filter((country: CountryFragment) =>
+        new RegExp(selectCurrency.join('|'), 'i').test(country.currency ?? '')
+      );
     }
     return countriesFiltered;
   };
