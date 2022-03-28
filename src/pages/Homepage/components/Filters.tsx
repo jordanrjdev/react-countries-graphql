@@ -56,7 +56,7 @@ const Filters = () => {
   };
 
   return (
-    <div className="flex items-center justify-between">
+    <div className="flex flex-col md:flex-row items-center md:justify-between">
       <Search placeholder="Search" onChange={onHandleChange} value={search} />
 
       <div className="flex justfy-start space-x-4">
