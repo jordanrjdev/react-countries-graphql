@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Nav /> Snapshot Should match the snapshot 1`] = `
+<DocumentFragment>
+  <nav
+    class="grid grid-cols-3 bg-indigo-600 content-center text-white px-10 py-3 space-y-3 md:space-y-0 "
+  >
+    <div
+      class="col-span-3 md:col-span-2"
+    >
+      <a
+        class="block text-center md:text-left text-2xl font-bold"
+        href="/"
+      >
+        CFT
+      </a>
+    </div>
+    <div
+      class="col-span-3 md:col-span-1 flex justify-center font-bold text-xl md:justify-end items-center space-x-3"
+    >
+      <a
+        href="https://jordanjaramillo.co"
+        role="links"
+        target="_blank"
+      >
+        Portfolio
+      </a>
+      <a
+        href="https://github.com/jordanrjdev"
+        role="links"
+        target="_blank"
+      >
+        Github
+      </a>
+    </div>
+  </nav>
+</DocumentFragment>
+`;

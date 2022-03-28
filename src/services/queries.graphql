@@ -1,0 +1,40 @@
+fragment Country on Country {
+  code
+  name
+  capital
+  emoji
+  currency
+  languages {
+    name
+    code
+  }
+  continent {
+    name
+    code
+  }
+}
+
+query GetAllContries {
+  countries {
+    ...Country
+  }
+}
+
+query GetCountriesByContinent($code: [String]!) {
+  countries(filter: { continent: { in: $code } }) {
+    ...Country
+  }
+}
+
+query GetCountry($code: ID!) {
+  country(code: $code) {
+    ...Country
+  }
+}
+
+query GetAllContinents {
+  continents {
+    code
+    name
+  }
+}
