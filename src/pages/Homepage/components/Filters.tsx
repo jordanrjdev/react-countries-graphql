@@ -87,7 +87,7 @@ const Filters = () => {
           selectItems={selectContinentChange}
           selectedItems={selectContinent}
           list={continents.map((continent: Continent) => continent.name)}
-          placeholder="Countries"
+          placeholder="Continents"
         />
       </div>
     </div>
